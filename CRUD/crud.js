@@ -13,7 +13,7 @@ function addDireccion(nombref, cpf ,estadof,coloniaf,callef,nuif,nuef,reff,telef
         telefono : telefonof
     };
    
-alert('Datos Guardados', newDirecction);
+//alert('Datos Guardados', newDirecction);
 console.log(newDirecction)
    Direccion.push(newDirecction);
    let recoveredData = localStorage.getItem('addDireccion')
@@ -40,13 +40,15 @@ function getDirect(){
 document.querySelector('#borrar').addEventListener('click',addDireccion);
 function borrarElemento(i){
   arr.splice(i, 1)
-  localStorage.setItem('NuevaDireccion', arr)
+  localStorage.setItem('newDirecction', arr)
   renderElement()
 }
 function getElements() {
-let localS = localStorage.getItem('NuevaDireccion')
+let localS = localStorage.getItem('newDirecction')
 arr = localS.split(',')
 renderElement()
+
+
 
 }
 

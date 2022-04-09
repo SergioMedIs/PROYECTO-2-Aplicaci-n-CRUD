@@ -50,14 +50,11 @@ function drawDirection(){
      refCell.innerHTML = list[i].ref;
      telefono.innerHTML = list[i].telefono;
  
-      var inputSeleccionar = document.createElement('input');
-      inputSeleccionar.type = 'radio';
-      inputSeleccionar.value = list[i].id;
-      selecCell.appendChild(inputSeleccionar);
 
  
    tbody.appendChild(row);
-  
+   renderElement()
+
  }
 }
 
