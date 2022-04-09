@@ -30,7 +30,7 @@ console.log(newDirecction)
    }
 
    console.log(localStorage.getItem('newDirection'))
-   document.querySelector('#borrar').addEventListener('click',localStorage.deteleItem(newDirection));
+ 
 }
 function getDirect(){
   return Direccion;
@@ -40,7 +40,7 @@ function getDirect(){
 document.querySelector('#borrar').addEventListener('click',addDireccion);
 function borrarElemento(i){
   arr.splice(i, 1)
-  localStorage.setItem('NuevDireccion', arr)
+  localStorage.setItem('NuevaDireccion', arr)
   renderElement()
 }
 function getElements() {
@@ -49,4 +49,4 @@ arr = localS.split(',')
 renderElement()
 
 }
-getElements()
+

@@ -63,6 +63,7 @@ input{
 
 }
 .aggg{
+    width: 250px;
     margin: 21px;
     line-height:0;
 }
@@ -71,19 +72,19 @@ input{
     font-weight: 400;
 
 }
-#input-1{
+#input1{
     width: 350px;
 }
-#input-2{
+#input2{
     width: 90px;
 }
-#input-5{
+#input5{
     width: 350px;
 }
-#input-8{
+#input8{
     width: 410px;
 }
-#input-9{
+#input9{
     width: 250px;
 }
 .direccionactual{
