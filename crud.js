@@ -30,6 +30,7 @@ console.log(newDirecction)
    }
 
    console.log(localStorage.getItem('newDirection'))
+   renderElement()
  
 }
 function getDirect(){
@@ -39,16 +40,21 @@ function getDirect(){
 //
 document.querySelector('#borrar').addEventListener('click',addDireccion);
 function borrarElemento(i){
-  arr.splice(i, 1)
-  localStorage.setItem('newDirecction', arr)
+  newDirecction.splice(i, 1)
+  localStorage.setItem('newDirecction', newDirecction)
   renderElement()
 }
-function getElements() {
-let localS = localStorage.getItem('newDirecction')
-arr = localS.split(',')
-renderElement()
 
 
+function renderElement(){
+  const  lista= document.getElementById('newDireccion')
+      addDireccion.innerHTML='' 
+          Direccion.array.forEach(function (addDireccion, item) {
+    lista.innerHTML+= `
+    <tr>
+    ${newDirecction}
+    </tr>
+    `
 
+  });
 }
-
